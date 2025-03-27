@@ -13,7 +13,7 @@ PORT = 55555
 # URL для проверки обновлений и кода
 UPDATE_URL = "https://raw.githubusercontent.com/xxxbeatiful/chat/main/version.txt"
 SCRIPT_URL = "https://raw.githubusercontent.com/xxxbeatiful/chat/main/server.py"
-CURRENT_VERSION = "1.0"  # Укажи текущую версию, которая совпадает с version.txt
+CURRENT_VERSION = "1.1"  # Укажи текущую версию, которая совпадает с version.txt
 
 # Создаем сокет
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -22,6 +22,9 @@ server.listen()
 
 clients = []
 usernames = []
+
+
+print("123123")
 
 # Функция для проверки обновлений
 def check_for_updates():
